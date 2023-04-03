@@ -42,5 +42,8 @@ resource "docker_container" "vault" {
     container_path = "/vault/file"
   }
 
-  depends_on = [docker_volume.vault_data]
+  depends_on = [
+    docker_volume.vault_data,
+    docker_network.vault,
+  ]
 }
