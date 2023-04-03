@@ -20,7 +20,6 @@ resource "docker_container" "vault" {
 
   env = [
     "VAULT_LOCAL_CONFIG=${local.vault_config}",
-    "VAULT_TOKEN=${var.unseal_token}",
     "VAULT_API_ADDR=${var.vault_ip_address}"
   ]
 

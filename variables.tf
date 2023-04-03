@@ -1,9 +1,3 @@
-variable "unseal_token" {
-  description = "value of the unseal token"
-  type        = string
-  sensitive   = true
-}
-
 variable "encryption_server_address" {
   description = "value of the encryption vault server address"
   type        = string
