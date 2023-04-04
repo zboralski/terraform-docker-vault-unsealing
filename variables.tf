@@ -10,6 +10,12 @@ variable "vault_version" {
   default     = "latest"
 }
 
+variable "unsealing_token" {
+  description = "value of the unsealing token"
+  type        = string
+  sensitive   = true
+}
+
 variable "key_name" {
     description = "value of the key name"
     type        = string
