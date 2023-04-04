@@ -39,7 +39,7 @@ resource "docker_container" "vault" {
   # Mount the volume to the container
   volumes {
     volume_name    = docker_volume.vault_data.name
-    container_path = "/vault"
+    container_path = "/vault/file"
   }
 
   depends_on = [
